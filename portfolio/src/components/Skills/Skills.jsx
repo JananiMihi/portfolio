@@ -7,8 +7,8 @@ const Skills = () => {
       title: "Programming Language",
       skills: [
         { name: "Python", level: 70 },
-        { name: "c#", level: 60 },
-        { name: "c", level: 70 },
+        { name: "C#", level: 60 },
+        { name: "C", level: 70 },
         { name: "JavaScript", level: 85 },
       ]
     },
@@ -17,7 +17,7 @@ const Skills = () => {
       skills: [
         { name: "React.JS", level: 80 },
         { name: "Next.JS", level: 85 },
-        { name: "Taliwind CSS", level: 80 },
+        { name: "Tailwind CSS", level: 80 },
         { name: "HTML/CSS/JavaScript", level: 88 },
       ]
     },
@@ -30,12 +30,11 @@ const Skills = () => {
       ]
     },
     {
-      title:"Databases",
+      title: "Databases",
       skills: [
         { name: "MySQL", level: 95 },
         { name: "PostgreSQL", level: 90 },
         { name: "MongoDB", level: 92 },
-        
       ]
     },
   ];

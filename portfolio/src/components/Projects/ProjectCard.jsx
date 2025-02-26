@@ -14,7 +14,6 @@ const ProjectCard = ({ project }) => {
           ))}
         </div>
         <div className="project-links">
-          
           <a href={project.sourceLink} target="_blank" rel="noopener noreferrer" className="btn btn-secondary">Code</a>
         </div>
       </div>

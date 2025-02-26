@@ -7,9 +7,8 @@ const projects = [
     id: 1,
     title: "Food Ordering Web App",
     shortDescription: "A modern MERN stack food ordering system with real-time tracking.",
-    image: "/assets/food order.avif",
+    image: "/assets/food-order.avif",
     technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-    
     sourceLink: "https://github.com/JananiMihi/food"
   },
   {
@@ -17,8 +16,7 @@ const projects = [
     title: "Income Prediction",
     shortDescription: "AI-powered system predicting income levels based on user data.",
     image: "/assets/ml.jpg",
-    technologies: ["Python", "Scikit-Learn", ],
-    
+    technologies: ["Python", "Scikit-Learn"],
     sourceLink: "https://github.com/yourusername/income-prediction"
   },
   {
@@ -26,17 +24,15 @@ const projects = [
     title: "Matchmaking Game",
     shortDescription: "A full-stack task manager with real-time updates and collaboration.",
     image: "/assets/networking.avif",
-    technologies: ["phython"],
-    
+    technologies: ["Python"],
     sourceLink: "https://github.com/JananiMihi/Network-Project.git"
   },
   {
     id: 4,
-    title: "Authendication system",
+    title: "Authentication System",
     shortDescription: "A full-stack task manager with real-time updates and collaboration.",
     image: "/assets/log.avif",
-    technologies: ["Nexj.js","Django"],
-   
+    technologies: ["Next.js", "Django"],
     sourceLink: "https://github.com/JananiMihi/Frontend.git"
   }
 ];

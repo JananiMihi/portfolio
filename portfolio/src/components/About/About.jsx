@@ -1,51 +1,48 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './About.css';
 
 const About = () => {
   return (
-    <section id="about" className="about-section">
-      <div className="about-container">
-        <div className="section-header">
-          <h2>About Me</h2>
-          <div className="underline"></div>
-        </div>
+    <section className="about-container">
+      <motion.div
+        className="about-header"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <h2>About Me</h2>
+      </motion.div>
 
-        <div className="about-content">
-          <div className="about-text">
-            <p>
-              I'm a passionate and motivated undergraduate with a strong interest in web development, 
-              specializing in creating elegant, responsive, and user-friendly interfaces. With a foundation
-              in Computer Science and a love for clean, efficient code, I am eager to contribute to meaningful
-              projects and gain hands-on experience in the tech industry.
-            </p>
-            <p>
-              My journey in web development began during my studies, where I worked on various academic and
-              personal projects, ranging from simple websites to interactive web applications. As an aspiring
-              tech enthusiast, I am constantly learning and adapting to new technologies to enhance my skills and
-              stay updated with industry trends. I am now seeking an internship opportunity to further grow
-              my expertise and contribute to real-world projects.
-            </p>
+      <motion.p
+        className="about-description"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1, delay: 0.5 }}
+      >
+        I'm a passionate and motivated undergraduate with a strong interest in web development,
+        specializing in creating elegant, responsive, and user-friendly interfaces.
+      </motion.p>
 
-            <div className="about-details">
-              <div className="about-detail">
-                <strong>Name:</strong> Janani Balasooriya
-              </div>
-              <div className="about-detail">
-                <strong>Email:</strong> janani@mihiranijmbalasooriya.com
-              </div>
-            </div>
+      <motion.div
+        className="about-contact-info"
+        initial={{ opacity: 0, x: -50 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 1.5 }}
+      >
+        <p><strong>Name:</strong> Janani Balasooriya</p>
+        <p><strong>Email:</strong> janani@example.com</p>
+      </motion.div>
 
-            <div className="about-buttons">
-              <a href="/assets/resume.pdf" download className="btn btn-primary">
-                Download CV
-              </a>
-              <a href="#contact" className="btn btn-secondary">
-                Contact Me
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+      <motion.div
+        className="about-buttons"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1, delay: 2 }}
+      >
+        <button className="btn">Download CV</button>
+        <button className="btn">Contact Me</button>
+      </motion.div>
     </section>
   );
 };
